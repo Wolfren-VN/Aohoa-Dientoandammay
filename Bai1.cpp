@@ -1,28 +1,12 @@
 #include <stdio.h>
-#include <math.h>
 
-int xuatSoChinhPhuong(int n)
+int xuatSoBoiCua7()
 {
-    int count = 0;
-    for(int i = n; i > 0; i--)
-    {
-        if((int)sqrt(i)==(float)sqrt(i))
-        {
-            count++;
-            printf("%d ",i);
-        }
-        
-    }
-    
-    return count;
+    for(int i = 10; i < 100; i++)
+        if(i % 7 == 0)
+            printf("%d ", i);
 }
 
 int main(void){
-    int n;
-    
-    printf("Nhap vao so nguyen n: ");
-    scanf("%d",&n);
-    
-    int sl = xuatSoChinhPhuong(n);
-    printf("\nCo %d so chinh phuong!",sl);
+    xuatSoBoiCua7();
 }
